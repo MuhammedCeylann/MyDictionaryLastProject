@@ -4,9 +4,18 @@ namespace LastProject
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args)w
         {
-            Console.WriteLine("Hello World!");
+            MyDictionary<int> kisiler = new MyDictionary<int>();
+
+            kisiler.Add(21);
+            kisiler.Add(32);
+            kisiler.Add(88);
+
+            foreach (var item in kisiler.Keys)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
